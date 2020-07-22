@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">mToDo</string>
+
+
+    <!--Main screen strings-->
+    <string name="action_settings">Setting</string>
+    <string name="about">About</string>
+
+
+    <!--Intro screen strings-->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="you_do_not_have_any_todo">You do not have any TODO</string>
+
+
+    <!--Add screen-->
+    <string name="update">Update</string>
+    <string name="save">Save</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="remind_me">Remind Me</string>
+
+</resources>

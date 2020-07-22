@@ -10,7 +10,7 @@ A simple todo Android App where showing details - (Kotlin, Dagger 2, Architectur
   - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - Data objects that notify views when the underlying database changes.
   - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes. 
   - [Dagger 2](https://dagger.dev/) - Dependency Injection Framework
-- [Retrofit](https://square.github.io/retrofit/) - A type-safe HTTP client for Android and Java.
+- [Room] (https://developer.android.com/reference/android/arch/persistence/room/RoomDatabase) - Room is a persistence library, part of the Android Jetpack for local database.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
 
 # Package Structure
@@ -18,9 +18,10 @@ A simple todo Android App where showing details - (Kotlin, Dagger 2, Architectur
     com.android.microblogapp    # Root Package
     .
     ├── data                # For data handling.
-    │   ├── remote          # Remote Data Handlers     
-    |   │   ├── api         # Retrofit API for remote end point.
-            ├── response    # API Response. 
+    │   ├── local           # Room Data Handlers     
+            ├── db          # Room Data Handlers     
+    |   │       ├── dao     # Room database table creation.
+                ├── entity  # Room database table componenet.
         └── model           # POJO classes  
     │   └── repository      # Single source of data.
     |
@@ -33,13 +34,14 @@ A simple todo Android App where showing details - (Kotlin, Dagger 2, Architectur
     |
     ├── ui                  # Activity/View layer
     │   ├── base            # Base View
-    │   ├── userssection    # User Section Activity & ViewModel
-    |   │   ├── adapter     # Adapter for RecyclerView
-    |   │   ├── viewmodel   # ViewHolder for RecyclerView   
-    │   └── usersprofile    # User Profile Activity & ViewModel
+    │   ├── home            # home screen
+    │   └── intro           # Intro Activity & ViewModel
     |   │   ├── adapter     # Adapter for RecyclerView
     |   │   ├── viewmodel   # ViewHolder for RecyclerView
-        └── postdetails    # Post Details Activity & ViewModel
+        └── todoadd         # ToDo Add Details Activity & ViewModel
+    |   │   ├── adapter     # Adapter for RecyclerView
+    |   │   ├── viewmodel   # ViewHolder for RecyclerView
+        └── todoview         # ToDo Add Details Activity & ViewModel
     |   │   ├── adapter     # Adapter for RecyclerView
     |   │   ├── viewmodel   # ViewHolder for RecyclerView
     |
